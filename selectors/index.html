@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery crash course</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+      body {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aquamarine;
+        line-height: 1.5em;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 4px solid #000;
+        margin-bottom: 10px;
+      }
+      #container {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Jquery crash course</h1>
+    </header>
+    <div id="container">
+      <h1 id="heading1">Heading one</h1>
+      <p id="para1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor <span>incididunt ut labore et dolore magna aliqua.</span> Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.
+      </p>
+
+      <h1 class="heading2">Heading two</h1>
+      <p class="para2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor <span>incididunt ut labore et dolore magna aliqua.</span> Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.
+      </p>
+
+      <ul id="list">
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+        <li>Item four</li>
+        <li>Item five</li>
+        <li>Item five</li>
+        <li>Item five</li>
+        <li>Item five</li>
+      </ul>
+
+      <input type="button" value="Button 1" />
+      <input type="submit" value="Button 1" />
+      <input type="text" />
+
+      <a href="https://google.com">Google</a>
+      <a href="https://yahoo.com">Yahoo</a>
+    </div>
+
+    <script>
+      // $('h1').hide();
+      //$('h1#heading1').hide();
+      // $('h1.heading2').hide();
+      // $('.heading2').hide();
+      // $('p span').css('color', 'red');
+      // $('ul#list li:first').css('color', 'red');
+      //$('ul#list li:last').css('color', 'green');
+      //$('ul#list li:even').css('background-color', 'yellow');
+      // $('ul#list li:nth-child(3n)').css('list-style', 'none');
+      //$('input[type="text"]').val('Hello world');
+      // $(':button').hide();
+      // $('[href]').css('color', 'red');
+      // $('a[href^="https://goog"]').css('color', 'red');
+      // target a href that start with yahoo
+      // $('a[href^="https://yahoo"]').css('color', 'red');
+    </script>
+  </body>
+</html>
