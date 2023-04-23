@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery crash course</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+      body {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aquamarine;
+        line-height: 1.5em;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 4px solid #000;
+        margin-bottom: 10px;
+      }
+      #container {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Jquery crash course</h1>
+    </header>
+    <div id="container">
+      <div id="result"></div>
+      <form id="postForm" action="https://jsonplaceholder.typicode.com/posts">
+        <input type="text" name="title" id="title" placeholder="Title" />
+        <textarea
+          name="body"
+          id="body"
+          cols="30"
+          rows="10"
+          placeholder="body"
+        ></textarea>
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+    <script>
+      $(document).ready(function () {
+        // $('#result').load('test.html', function (responseTxt, statusTxt, xhr) {
+        //   if (statusTxt == 'success') {
+        //     console.log('success');
+        //   } else if (statusTxt == 'error') {
+        //     console.log('error');
+        //   }
+        // });
+        // $.getJSON('users.json', function (data) {
+        //   console.log(data);
+        //   $.each(data, function (key, value) {
+        //     $('#result').append(
+        //       '<h3>' + value.firstName + '</h3>' + '<p>' + value.email + '</p>'
+        //     );
+        //   });
+        // });
+        // $.ajax({
+        //   url: 'https://jsonplaceholder.typicode.com/users',
+        //   method: 'GET',
+        //   success: function (data) {
+        //     console.log(data);
+        //     $.each(data, function (key, value) {
+        //       $('#result').append(
+        //         '<h3>' + value.name + '</h3>' + '<p>' + value.email + '</p>'
+        //       );
+        //     });
+        //   },
+        //   error: function (error) {
+        //     console.log(error);
+        //   },
+        // });
+        // $.ajax({
+        //   method: 'GET',
+        //   url: 'https://jsonplaceholder.typicode.com/posts',
+        //   dataType: 'json',
+        // }).done(function (data) {
+        //   console.log(data);
+        //   $.map(data, function (value, i) {
+        //     $('#result').append(
+        //       '<h3>' + value.title + '</h3>' + '<p>' + value.body + '</p>'
+        //     );
+        //   });
+        // });
+        // $('#postForm').submit(function (e) {
+        //   e.preventDefault();
+        //   var title = $('#title').val();
+        //   var body = $('#body').val();
+        //   $.ajax({
+        //     method: 'POST',
+        //     url: 'https://jsonplaceholder.typicode.com/posts',
+        //     data: {
+        //       title: title,
+        //       body: body,
+        //     },
+        //     success: function (data) {
+        //       console.log(data);
+        //       $('#result').append(
+        //         '<h3>' + data.title + '</h3>' + '<p>' + data.body + '</p>'
+        //       );
+        //     },
+        //     error: function (error) {
+        //       console.log(error);
+        //     },
+        //   });
+        // });
+      });
+    </script>
+  </body>
+</html>
